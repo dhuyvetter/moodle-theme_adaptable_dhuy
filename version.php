@@ -17,23 +17,25 @@
 /**
  * Version details
  *
- * @package    theme_adaptable
+ * @package    theme_adaptable_dhuy
  * @copyright  2015-2019 Jeremy Hopkins (Coventry University)
  * @copyright  2015-2019 Fernando Acedo (3-bits.com)
  * @copyright  2017-2019 Manoj Solanki (Coventry University)
  * @copyright  2019 G J Barnard
  *               {@link https://moodle.org/user/profile.php?id=442195}
  *               {@link https://gjbarnard.co.uk}
+ * @copyright  2025 Dimitri Dhuyvetter
+ *               {@link https://dhuyvetter.net}
  * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
  */
 
 defined('MOODLE_INTERNAL') || die;
 
 // The theme name.
-$plugin->component = 'theme_adaptable';
+$plugin->component = 'theme_adaptable_dhuy';
 
 // Adaptable version date (YYYYMMDDrr where rr is the release number).
-$plugin->version = 2024100503;
+$plugin->version = 2025021401;
 
 $plugin->requires = 2024100700.00; // 4.5 (Build: 20241007).
 
