@@ -405,6 +405,9 @@ function theme_adaptable_process_scss($scss, $theme) {
         '[[setting:printbodyfontsize]]' => '11pt',
         '[[setting:printmargin]]' => '2cm 1cm 2cm 2cm',
         '[[setting:printlineheight]]' => '1.2',
+        ['[[setting:loginbgimage]]'] => '',
+        ['[[setting:loginbgstyle]]'] => '',
+        ['[[setting:loginbgopacity]]'] => '',
     ];
 
     // Get all the defined settings for the theme and replace defaults.
@@ -421,17 +424,17 @@ function theme_adaptable_process_scss($scss, $theme) {
     }
     $defaults['[[setting:homebkg]]'] = $homebkg;
 
-    $localtoolbox = \theme_adaptable\toolbox::get_local_toolbox();
-    if (is_object($localtoolbox)) {
-        $retr = $localtoolbox->login_style($theme);
-        $defaults['[[setting:loginbgimage]]'] = $retr->loginbgimage;
-        $defaults['[[setting:loginbgstyle]]'] = $retr->loginbgstyle;
-        $defaults['[[setting:loginbgopacity]]'] = $retr->loginbgopacity;
-    } else {
-        $defaults['[[setting:loginbgimage]]'] = '';
-        $defaults['[[setting:loginbgstyle]]'] = '';
-        $defaults['[[setting:loginbgopacity]]'] = '';
-    }
+    // $localtoolbox = \theme_adaptable\toolbox::get_local_toolbox();
+    // if (is_object($localtoolbox)) {
+    //     $retr = $localtoolbox->login_style($theme);
+    //     $defaults['[[setting:loginbgimage]]'] = $retr->loginbgimage;
+    //     $defaults['[[setting:loginbgstyle]]'] = $retr->loginbgstyle;
+    //     $defaults['[[setting:loginbgopacity]]'] = $retr->loginbgopacity;
+    // } else {
+    //     $defaults['[[setting:loginbgimage]]'] = '';
+    //     $defaults['[[setting:loginbgstyle]]'] = '';
+    //     $defaults['[[setting:loginbgopacity]]'] = '';
+    // }
 
     $socialpaddingsidehalf = '16';
     if (!empty($theme->settings->socialpaddingside)) {

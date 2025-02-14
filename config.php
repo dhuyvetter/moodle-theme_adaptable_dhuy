@@ -34,7 +34,7 @@ defined('MOODLE_INTERNAL') || die();
 global $PAGE;
 
 // The plugin internal name.
-$THEME->name = 'adaptable';
+$THEME->name = 'adaptable_dhuy';
 
 // The frontpage regions.
 $frontlayoutregions = [
