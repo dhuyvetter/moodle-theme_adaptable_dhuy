@@ -659,7 +659,7 @@ function theme_adaptable_get_full() {
 function theme_adaptable_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = []) {
     static $theme;
     if (empty($theme)) {
-        $theme = theme_config::load('adaptable');
+        $theme = theme_config::load('adaptable_dhuy');
     }
     if ($context->contextlevel == CONTEXT_SYSTEM) {
         // By default, theme files must be cache-able by both browsers and proxies.  From 'More' theme.
@@ -804,7 +804,7 @@ function theme_adaptable_get_current_page() {
 function theme_adaptable_extend_navigation_course($coursenode, $course, $coursecontext) {
     global $PAGE;
 
-    if (($PAGE->theme->name == 'adaptable') && ($PAGE->user_allowed_editing())) {
+    if (($PAGE->theme->name == 'adaptable_dhuy') && ($PAGE->user_allowed_editing())) {
         // Add the turn on/off settings.
         if ($PAGE->pagetype == 'grade-report-grader-index') {
             $editurl = clone($PAGE->url);

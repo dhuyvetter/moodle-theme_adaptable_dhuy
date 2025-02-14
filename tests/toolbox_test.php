@@ -39,7 +39,7 @@ final class toolbox_test extends \advanced_testcase {
         parent::setUp();
         $this->resetAfterTest(true);
 
-        set_config('theme', 'adaptable');
+        set_config('theme', 'adaptable_dhuy');
     }
 
     /**

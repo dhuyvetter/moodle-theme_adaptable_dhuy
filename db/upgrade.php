@@ -43,7 +43,7 @@ function xmldb_theme_adaptable_upgrade($oldversion = 0) {
             set_config('fonttitlename', 'sans-serif', 'theme_adaptable');
         }
 
-        upgrade_plugin_savepoint(true, 2020073101, 'theme', 'adaptable');
+        upgrade_plugin_savepoint(true, 2020073101, 'theme', 'adaptable_dhuy');
     }
 
     if ($oldversion < 2020073107) {
@@ -57,7 +57,7 @@ function xmldb_theme_adaptable_upgrade($oldversion = 0) {
             }
         }
 
-        upgrade_plugin_savepoint(true, 2020073107, 'theme', 'adaptable');
+        upgrade_plugin_savepoint(true, 2020073107, 'theme', 'adaptable_dhuy');
     }
 
     // Method check after purge to reload updated local_toolbox if needed.
@@ -81,7 +81,7 @@ function xmldb_theme_adaptable_upgrade($oldversion = 0) {
             unset_config('menuhovercolor', 'theme_adaptable');
         }
 
-        upgrade_plugin_savepoint(true, 2024032801, 'theme', 'adaptable');
+        upgrade_plugin_savepoint(true, 2024032801, 'theme', 'adaptable_dhuy');
     }
 
     if ($oldversion < 2024032803) {
@@ -99,7 +99,7 @@ function xmldb_theme_adaptable_upgrade($oldversion = 0) {
             unset_config('inputbuttonfocuscolouropacity', 'theme_adaptable');
         }
 
-        upgrade_plugin_savepoint(true, 2024032803, 'theme', 'adaptable');
+        upgrade_plugin_savepoint(true, 2024032803, 'theme', 'adaptable_dhuy');
     }
 
     if ($oldversion < 2024100502) {
@@ -110,7 +110,7 @@ function xmldb_theme_adaptable_upgrade($oldversion = 0) {
             unset_config('navbardisplaysubmenuarrow', 'theme_adaptable');
         }
 
-        upgrade_plugin_savepoint(true, 2024100502, 'theme', 'adaptable');
+        upgrade_plugin_savepoint(true, 2024100502, 'theme', 'adaptable_dhuy');
     }
 
     if ($oldversion < 2024100503) {
@@ -121,7 +121,7 @@ function xmldb_theme_adaptable_upgrade($oldversion = 0) {
             unset_config('msgbadgecolor', 'theme_adaptable');
         }
 
-        upgrade_plugin_savepoint(true, 2024100503, 'theme', 'adaptable');
+        upgrade_plugin_savepoint(true, 2024100503, 'theme', 'adaptable_dhuy');
     }
 
     // Automatic 'Purge all caches'....

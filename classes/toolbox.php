@@ -123,7 +123,7 @@ class toolbox {
      */
     public static function get_config_setting($settingname, $themename = null, $settingdefault = null) {
         if (empty($themename)) {
-            $themename = 'adaptable';
+            $themename = 'adaptable_dhuy';
         }
         $settingvalue = get_config('theme_'.$themename, $settingname);
         return (!empty($settingvalue)) ? $settingvalue : $settingdefault;
@@ -142,7 +142,7 @@ class toolbox {
     public static function get_setting($settingname, $format = false, $themename = null, $settingdefault = null) {
 
         if (empty($themename)) {
-            $themename = 'adaptable';
+            $themename = 'adaptable_dhuy';
         }
         if (empty(self::$themeconfigs[$themename])) {
             self::$themeconfigs[$themename] = theme_config::load($themename);
@@ -178,14 +178,14 @@ class toolbox {
     /**
      * Returns the given theme.
      *
-     * @param string $themename null(default of 'adaptable' used)|theme name.
+     * @param string $themename null(default of 'adaptable_dhuy' used)|theme name.
      *
      * @return any null|theme_config class.
      */
     public static function get_theme($themename = null) {
 
         if (empty($themename)) {
-            $themename = 'adaptable';
+            $themename = 'adaptable_dhuy';
         }
         if (empty(self::$themeconfigs[$themename])) {
             self::$themeconfigs[$themename] = theme_config::load($themename);

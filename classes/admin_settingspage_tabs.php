@@ -92,8 +92,8 @@ class admin_settingspage_tabs extends \theme_boost_admin_settingspage_tabs {
         }
 
         $themes = \core_plugin_manager::instance()->get_present_plugins('theme');
-        if (!empty($themes['adaptable'])) {
-            $plugininfo = $themes['adaptable'];
+        if (!empty($themes['adaptable_dhuy'])) {
+            $plugininfo = $themes['adaptable_dhuy'];
         } else {
             $plugininfo = \core_plugin_manager::instance()->get_plugin_info('theme_adaptable');
             $plugininfo->version = $plugininfo->versiondisk;
